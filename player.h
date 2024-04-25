@@ -6,6 +6,8 @@
 
 #include <string>
 #include <vector>
+#include <unordered_map>
+
 
 
 
@@ -16,9 +18,11 @@ private:
     double health; // health of the player
     double attack_damage; // attack damage of the player
     int exp_points; // experience points of the player
-    std::vector<std::string> equipments; // equipments the player have
+    std::unordered_map<std::string,int> equipments; // equipments the player have
+    std::string current_equipment; // current equipment that player have
     std::string status_effect; // status effect that player have
     int golds; // golds that player have
+    friend class Story;
 public:
     Player(); // constructor 
     void change_health(double amount); // function to change the health
@@ -26,8 +30,9 @@ public:
     void change_exp_points(int amount); // function to change the experience points
     void see_equipments(); // function to see the equipments player have
     void see_status_effect(); // function to see the status effect
-    void set_status_effect(std::string effect); // function to set the status effect
+    void set_status_effect(std::string& effect); // function to set the status effect
     void change_golds(int amount); // function to see the golds that player have
+    void change_equipment(); // function to change the equipmentl
 };
 
 
