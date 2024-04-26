@@ -10,7 +10,7 @@ Player::Player(){
     std::cout << "Your name : " << std::endl;
     std::cin >>  _name;
     Player::name = name;
-    std::cout << "Which race you want to be: " << std::endl; // TODO : IMPLEMENT THE RACES SO THAT PLAYER CAN CHOOSE
+    std::cout << "Which race you want to be: " << std::endl; 
     int choose;
     std::cin >> choose;  
         switch(choose){

@@ -22,7 +22,7 @@ private:
     std::string current_equipment; // current equipment that player have
     std::string status_effect; // status effect that player have
     int golds; // golds that player have
-    friend class Story;
+    friend class StorylineManager;
 public:
     Player(); // constructor 
     void change_health(double amount); // function to change the health
