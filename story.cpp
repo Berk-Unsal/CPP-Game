@@ -16,5 +16,20 @@ WizardStoryline::WizardStoryline(){
 
 
 StorylineManager::StorylineManager(Player& player){
-    
+    if(player.race == "human"){ // [WARNING] DO NOT RUN
+        HumanStoryline human_story;
+        while(true){
+
+        }
+    }
+    else if(player.race == "orc"){ // [WARNING] DO NOT RUN
+        OrcStoryline orc_story;
+        while(true){
+
+        }
+    }
+    else if(player.race == "wizard"){ // [WARNING] DO NOT RUN
+        WizardStoryline wizard_story;
+    }
+
 }
